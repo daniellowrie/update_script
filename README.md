@@ -1,7 +1,7 @@
 # update_script
 Fileless malware that bypasses Windows Defender using PowerShell and obfuscation
 
-YouTube video demonstration >>> https://youtu.be/BFVzmZXIbQk
+YouTube video demonstration and explanation >>> https://youtu.be/BFVzmZXIbQk
 
 Just a simple Reverse Shell using a batch script to kick things off, after which everything is fileless. 
 
