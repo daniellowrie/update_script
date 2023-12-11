@@ -1,7 +1,7 @@
 # update_script
 
 !!! FOR SECURITY TESTING PURPOSES ONLY !!! 
-******************************************
+\******************************************
 DO NOT USE THIS ON SYSTEMS THAT YOU DO NOT 
 OWN UNLESS YOU HAVE EXPRESSED PERMISSION !
 
