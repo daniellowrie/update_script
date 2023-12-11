@@ -1,4 +1,4 @@
-# update_script
+# UpdateScript-v1.2
 
 !!! FOR SECURITY TESTING PURPOSES ONLY !!! <br>
 \******************************************************<br>
