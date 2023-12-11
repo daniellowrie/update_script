@@ -1,9 +1,20 @@
 # update_script
-Fileless malware that bypasses Windows Defender using PowerShell and obfuscation
+
+!!! FOR SECURITY TESTING PURPOSES ONLY !!! 
+******************************************
+DO NOT USE THIS ON SYSTEMS THAT YOU DO NOT 
+OWN UNLESS YOU HAVE EXPRESSED PERMISSION !
+
+Fileless malware that bypasses Windows Defender using PowerShell and obfuscation.
+Just a simple Reverse Shell using a batch script to kick things off, after which everything is fileless.
 
 YouTube video demonstration and explanation >>> https://youtu.be/BFVzmZXIbQk
 
-Just a simple Reverse Shell using a batch script to kick things off, after which everything is fileless. 
+The `WinSecurityUpdate` file needs to be edited BY YOU to work.
+You will need to decode the *base64* strings that request the `a1` and `r1` files.
+Then you will need to modify the IP addresses in the `a1` and `r1` files to your own and re-encode with *base64*.
+Replace the old `a1` and `r1` strings with your modified version and save.
+ 
 
 Going to work on building a better mousetrap as this was just an initial attempt to make something 'malicious' that could bypass Defender. 
 
