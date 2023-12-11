@@ -12,7 +12,7 @@ YouTube video demonstration and explanation >>> https://youtu.be/BFVzmZXIbQk
 
 [!] The `WinSecurityUpdate` file needs to be edited BY YOU for this to work. <br>
 - You will need to decode the *base64* strings that request the `a1` and `r1` files. <br>
-- Then you will need to modify the IP addresses in the `a1` and `r1` files to your own and re-encode with *base64*. <br>
+- Then you will need to modify the IP addresses in the `a1` and `r1` decoded strings to YOUR ATTACK IP and re-encode with *base64*. <br>
 - Replace the old `a1` and `r1` strings with your modified version and save.
 
 [!] The `r1` file also needs to be edited BY YOU to work. <br>
