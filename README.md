@@ -1,8 +1,8 @@
 # update_script
 
-!!! FOR SECURITY TESTING PURPOSES ONLY !!! \n
-\******************************************
-DO NOT USE THIS ON SYSTEMS THAT YOU DO NOT 
+!!! FOR SECURITY TESTING PURPOSES ONLY !!! <br>
+\******************************************<br>
+DO NOT USE THIS ON SYSTEMS THAT YOU DO NOT <br>
 OWN UNLESS YOU HAVE EXPRESSED PERMISSION !
 
 Fileless malware that bypasses Windows Defender using PowerShell and obfuscation.
