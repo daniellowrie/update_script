@@ -3,7 +3,7 @@
 !!! FOR SECURITY TESTING PURPOSES ONLY !!! <br>
 \******************************************************<br>
 DO NOT USE THIS ON SYSTEMS THAT YOU DO NOT <br>
-OWN UNLESS YOU HAVE EXPRESSED PERMISSION !
+OWN UNLESS YOU HAVE EXPRESS PERMISSION !!!
 
 Fileless malware that bypasses Windows Defender using PowerShell and obfuscation. <br>
 Just a simple Reverse Shell using a batch script to kick things off, after which everything is fileless.
