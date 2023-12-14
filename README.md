@@ -21,7 +21,8 @@ Setup is simple.<br>
 `sudo nc -vnlp 443`
 5. Back at the SecUp terminal<br>
 `Press ENTER to continue...`
-6. Upload and execute `update_script.cmd` to target any way you can<br>
+6. Upload and execute `update_script.cmd` to target any way you like<br>
+
 7. Shellz
 <P></P>
 If you don't want to build SecUp, then that's OK.<br>
