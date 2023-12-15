@@ -1,4 +1,4 @@
-# UpdateScript-v1.2
+# SecUp "Malware for Learning"
 
 !!! FOR SECURITY TESTING PURPOSES ONLY !!! <br>
 \******************************************************<br>
