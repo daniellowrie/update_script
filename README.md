@@ -10,7 +10,7 @@ Just a simple Reverse Shell using a batch script to kick things off, after which
 
 YouTube video demonstration and explanation >>> https://youtu.be/BFVzmZXIbQk
 
-Setup is simple.<br>
+Setup and Execution<br>
 1. Clone this repo<br>
 `git clone https://github.com/daniellowrie/update_script`
 2. Build **SecUp.go**<br>
