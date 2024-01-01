@@ -33,6 +33,9 @@ Going to work on building a better mousetrap as this was just a PoC at making so
 
 
 
-https://user-images.githubusercontent.com/19762230/132001237-04ae01ae-102e-4070-9599-ad05128c3f73.mp4
+
+
+
+https://github.com/daniellowrie/update_script/assets/19762230/a83d13e4-108f-4406-b307-bf18704d4278
 
 
