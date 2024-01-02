@@ -22,10 +22,14 @@ Setup and Execution<br>
 5. Open another terminal, and compile EXE<br>
 `GOOS=windows go build -ldflags "-s -w" -trimpath update_script.go`<br>
 `upx -9 update_script.exe`
-6. Back at the SecUp terminal<br>
+  - A word about comipiling for Windows...
+    + I've experienced Golang binaries getting flagged as malware, even "Hello, World!"
+      - I've read that removing `-ldflags` and `-trimpath` may help and that the standard build is best for AV evasion
+      - I've also read that packing can trip AV detection as well and again the standard build is best for AV evasion
+7. Back at the SecUp terminal<br>
 `Press ENTER to continue...`
-7. Upload and execute `update_script.exe` to target any way you like<br>
-8. Shellz! :)
+8. Upload and execute `update_script.exe` to target any way you like<br>
+9. Shellz! :)
 <P></P>
 <P></P>
 Going to work on building a better mousetrap as this was just a PoC at making something 'malicious' that could bypass Defender.
