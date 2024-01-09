@@ -28,11 +28,12 @@ Setup and Execution<br>
         + BUT if you'd like to make the binary smaller...
           - `GOOS=windows go build -ldflags "-s -w" -trimpath update_script.go`<br>
           - `upx -9 update_script.exe`  
-7. Back at the SecUp terminal<br>
+6. Back at the SecUp terminal<br>
 `Press ENTER to continue...`
-8. Upload and execute `update_script.exe` to target any way you like<br>
-9. Shellz! :)
+7. Upload and execute `update_script.exe` to target any way you like<br>
+8. Shellz! :)
 <P></P>
+I would recommend putting `update_script.exe` in a zip file for transfer to target as most browsers don't like when you download rando exectuables and will complain.
 <P></P>
 Going to work on building a better mousetrap as this was just a PoC at making something 'malicious' that could bypass Defender.
 <P></P>
