@@ -20,9 +20,8 @@ func drop() {
 
 func main() {
 	fmt.Println("[!] Contacting Windows Update server for updates...")
-	// add call to windows update
-	update := "wuauclt.exe /detectnow"
-
+	// Call to windows update
+	update := "powershell.exe (New-Object -ComObject Microsoft.Update.AutoUpdate).DetectNow()"
 	cmd := exec.Command("cmd.exe", update)
 	err := cmd.Run()
 	if err != nil {
